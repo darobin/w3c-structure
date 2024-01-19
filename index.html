@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" async class="remove"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%220.9em%22 font-size=%22105%22>☸</text></svg>">
+    <title>Structure of the W3C</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@robinberjon">
+    <meta name="twitter:creator" content="@robinberjon">
+    <meta name="twitter:title" property="og:title" content="Structure of the W3C">
+    <meta name="twitter:description" property="og:description" content="Describing how community, consortium, and corporation fit together.">
+    <meta name="twitter:url" property="og:url" content="https://darobin.github.io/w3c-structure/">
+    <meta property="og:locale" content="en">
+    <style>
+      body {
+        background: none !important;
+      }
+    </style>
+    <script class="remove">
+      var respecConfig = {
+        specStatus: 'unofficial',
+        postProcess: [(config, doc) => {
+          const time = doc.querySelector('#w3c-state time');
+          const h2 = doc.querySelector('#w3c-state');
+          h2.innerHTML = 'Proposal ';
+          h2.appendChild(time);
+          const dl = doc.querySelector('details > dl');
+          dl.firstElementChild?.remove();
+          dl.firstElementChild?.remove();
+        }],
+        editors: [{
+          name: 'Robin Berjon',
+          url: 'https://berjon.com/',
+        }],
+        github: {
+          repoURL: 'https://github.com/darobin/w3c-structure',
+          branch: 'main',
+        },
+        edDraftURI: 'https://darobin.github.io/w3c-structure/',
+        shortName: 'w3c-structure',
+      };
+    </script>
+  </head>
+  <body>
+    <section id="abstract">
+      <p>
+        This document provides an overview of the structure of W3C governance.
+      </p>
+    </section>
+    <section id="sotd"></section>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        The web works thanks to an array of <dfn>web infrastructure</dfn> services, which provide.
+        "<em>shared means to many ends</em>" including interoperable standards and other critical
+        services. Over the years, the [=community=] has developed a multi-pronged governance system
+        to manage this infrastructure. This document makes this governance system more explicit,
+        and suggests a number of changes that stem from the recent addition of a [=board=] and 
+        [=corporation=]. (It may be worth noting that the current Process document has become 
+        slightly out of date in some of its definitions).
+      </p>
+    </section>
+    
+    <section>
+      <h2>High Level Structure</h2>
+      <p>
+        The <dfn data-lt="community">web community</dfn> is the set of stakeholders, individual and collective, 
+        who rely upon and take part in the web.
+      </p>
+      <p>
+        The <dfn>W3C</dfn>'s role is to provision infrastructure critical to the operation of the web. 
+        Over the years, depending on needs, available resources, and strategy, this has taken 
+        various forms: often open, interoperable standards but also software products and 
+        libraries, policymaking support, educational material, community organising, or 
+        interoperability testing. The [=W3C=] is comprised of the [=consortium=] and the 
+        [=corporation=], working in support of the [=community=].
+      </p>
+      <p>
+        The <dfn data-lt="W3C corporation|team">corporation</dfn> (aka team)'s role is to handle 
+        the day-to-day executive and operational aspects in support of [=web infrastructure=]. The 
+        <dfn data-lt="W3C CEO">CEO</dfn> leads the [=corporation=]. The <dfn>Board</dfn> exerts 
+        oversight over the [=CEO=] and supports setting the [=corporation=]'s strategy. 
+      </p>
+      <p>
+        The <dfn>consortium</dfn>'s role is to convene the [=community=] stakeholders most actively 
+        involved in the provision of [=web infrastructure=] and to define and maintain the institutions 
+        that organise their cooperation. The <dfn class="export">AB</dfn> oversees the institutional aspects of the 
+        [=consortium=]'s work and guarantees that [=web infrastructure=] is provided and governed as a 
+        commons. 
+      </p>
+      <p>
+        <dfn>Horizontal review</dfn> is the cornerstone of an integrated approach to [=web infrastructure=], 
+        ensuring to the extent possible that the many moving parts of [=web infrastructure=] operate 
+        coherently and as intended. It is operated by independent agencies (review groups) that each 
+        regulate foundational aspect of [=web infrastructure=]. The <dfn class="export">TAG</dfn> is tasked with the 
+        coordination of [=horizontal review=] and with the technical strategy of [=web infrastructure=].
+      </p>
+    </section>
+    <section class="appendix">
+      <h2>Acknowledgements</h2>
+      <p>
+        The following people (in alphabetical order) have provided invaluable input into this draft:
+        Gonzalo Camarillo,
+        Ian Jacobs, and
+        Mark Nottingham.
+      </p>
+    </section>
+</body>
+</html>
